@@ -11,6 +11,6 @@ import com.example.project.entity.Person;
 @RepositoryRestResource(collectionResourceRel = "people", path = "people")
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long> {
 
-	List<Person> findByLastname(@Param("name") String name);
+	List<Person> findByLastName(@Param("name") String name);
 
 }

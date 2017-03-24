@@ -11,6 +11,8 @@ import javax.persistence.Table;
 @Table(name = "book_category")
 public class BookCategory extends BaseEntity  {
 	
+	private static final long serialVersionUID = 1L;
+	
 	@OneToMany(mappedBy = "bookCategory", cascade = CascadeType.ALL)
 	private Set<Book> books;
 
@@ -20,5 +22,9 @@ public class BookCategory extends BaseEntity  {
 
 	public void setBooks(Set<Book> books) {
 		this.books = books;
+	}
+
+	public boolean isNew() {
+		return null == getId();
 	}
 }

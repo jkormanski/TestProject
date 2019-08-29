@@ -1,4 +1,4 @@
-package com.example.project.dao;
+package com.example.project.repository;
 
 import java.util.List;
 

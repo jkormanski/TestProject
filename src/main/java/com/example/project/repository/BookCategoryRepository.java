@@ -1,4 +1,4 @@
-package com.example.project.dao;
+package com.example.project.repository;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
